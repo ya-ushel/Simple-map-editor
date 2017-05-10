@@ -1,6 +1,6 @@
 # React Native Starter Kit
 
-> The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their installation
+The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their installation
 ---
 
 ## Docs
