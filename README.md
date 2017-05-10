@@ -1,7 +1,6 @@
 # React Native Starter Kit
 
-React Native Starter Kit helps you get started with React Native. It contains a bunch of helpful components, building blocks and basic structure to allow you to jump straight into building an app.
-
+> The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their installation
 ---
 
 ## Docs
