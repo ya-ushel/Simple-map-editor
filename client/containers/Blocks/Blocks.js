@@ -88,7 +88,7 @@ class Blocks extends Component {
         return (
             <div className="blocksContainer">
                 <div className="blocks"
-                     onWheel={this.onWheel.bind(this, event)}
+                     // onWheel={this.onWheel.bind(this, event)}
                 >
                     <Slider ref={c => this.slider = c } {...settings}>
                         {sliderContent}

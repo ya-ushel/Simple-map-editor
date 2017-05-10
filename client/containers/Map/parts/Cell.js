@@ -73,7 +73,6 @@ export default class Cell extends Component {
         if (this.props.tools.currentItem === 'select') {
             this.props.mapActions.resetSelections();
         }
-        let testGit;
     }
 
     render() {
