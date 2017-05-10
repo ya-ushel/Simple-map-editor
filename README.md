@@ -8,7 +8,7 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 1. [Getting Started](#getting-started)
 1. [Features](#features)
-1. [Examples](#examples)
+1. [How it works](#how-it-works)
 
 ---
 
