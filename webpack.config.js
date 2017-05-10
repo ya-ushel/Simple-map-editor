@@ -1,7 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const HappyPack = require('happypack');
-const happyThreadPool = HappyPack.ThreadPool({size: 5});
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
@@ -24,9 +22,14 @@ module.exports = {
         loaders: [
             {
                 test: /\.jsx?$/,
-                loader: 'happypack/loader?id=jsx',
-                exclude: /node_modules/,
-                include: path.resolve(__dirname, 'client')
+                loader: 'babel',
+                query: {
+                    cacheDirectory: true,
+                    plugins: ["transform-regenerator"],
+                    presets: ["react", "es2015", "stage-0"]
+                },
+                include: path.resolve(__dirname, 'client'),
+                exclude: /node_modules/
             },
             {
                 test: /\.scss$/,
@@ -55,27 +58,14 @@ module.exports = {
         }),
         new webpack.NoErrorsPlugin(),
         new ExtractTextPlugin('styles.css'),
-        createHappyPlugin('jsx', ['react-hot!babel-loader?presets[]=es2015&presets[]=react&presets[]=stage-0']),
         new webpack.SourceMapDevToolPlugin({
             filename: '[file].map',
             exclude: ['bundle.js']
         })
     ],
-    node: {
-        net: 'empty',
-        dns: 'empty'
-    },
     resolve: {
         modulesDirectories: ['node_modules'],
         root: [path.resolve('./client/')]
     },
     watch: true
 };
-
-function createHappyPlugin(id, loaders) {
-    return new HappyPack({
-        id: id,
-        loaders: loaders,
-        threadPool: happyThreadPool
-    });
-}
