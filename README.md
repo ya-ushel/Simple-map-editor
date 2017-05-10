@@ -30,7 +30,7 @@ The map editor provides a comfortable work with the source code of the map. It c
 | Tools            |                           Available |
 ---
 
-## Examples
+## How it works
 
  
 ##### 1. Hand tool   ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)
