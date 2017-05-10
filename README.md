@@ -1,6 +1,7 @@
-# React Native Starter Kit
+# Simple map editor
 
-The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their installation
+The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their display
+
 ---
 
 ## Docs
@@ -14,7 +15,7 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 ## Getting Started
 
-1. Clone this project `git clone https://github.com/mcnamee/react-native-starter-app.git`
+1. Clone this project `https://github.com/ya-ushel/Simple-map-editor.git`
 1. Run `npm install` from root directory
 1. Run `npm run start`
 
@@ -24,15 +25,16 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 | Feature          | Description                         |
 |------------------|-------------------------------------|
-| button           |                           Available |
-| cards            |                           Available |
-| checkbox         |                           Available |
+| Map              |                           Available |
+| Blocks           |                           Available |
+| Tools            |                           Available |
 
 ## Examples
+----
+ 
+##### 1. Hand tool   ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)
 
-1. Hand tool
 
-![screenshot of sample](http://webdesign.ru.net/images/Heydon_min.jpg)
 
 ```js
    class A extends null {}
