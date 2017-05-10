@@ -2,7 +2,7 @@ import {
     SET_CURRENT_ITEM,
     GENERATED_STRUCTURES,
     SET_CURRENT_GENERATION,
-} from '../constants/Tools';
+} from '../constants';
 
 const initialState = {
     currentItem: 'hand',

@@ -1,7 +1,7 @@
 import {
     INIT_BLOCKS,
     SET_SELECTED_BLOCK,
-} from '../constants/Blocks';
+} from '../constants';
 
 const initialState = {
     selectedBlock: '1',

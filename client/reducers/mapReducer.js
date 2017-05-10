@@ -7,7 +7,7 @@ import {
     RESET_SELECTIONS,
     MAPPING,
     CREATE_STRUCTURES,
-} from '../constants/Map';
+} from '../constants';
 
 const initialState = {
     source: [],
