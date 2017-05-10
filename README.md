@@ -35,7 +35,7 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 ## 1. Tools
 
- * ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  Hand tool 
+ * ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  *Hand tool*.  
 This tool allows you to insert the selected block from the panel of blocks on the card. There are two types of insertion: inserting one block - clicking the mouse, and inserting several blocks - by clamping.
 
 * Delete tool   ![hand tool](http://i.piccy.info/i9/bb26612e6ba5589ea1f4e58844930bf5/1494443301/992/1144576/delete.png)
