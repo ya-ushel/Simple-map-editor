@@ -6,7 +6,7 @@ import {
     ADD_SELECTION,
     RESET_SELECTIONS,
     CREATE_STRUCTURES,
-} from '../constants/Map';
+} from '../constants';
 
 export function initMap(source, width, height) {
 

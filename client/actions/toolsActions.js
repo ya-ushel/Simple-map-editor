@@ -1,7 +1,7 @@
 import {
     SET_CURRENT_ITEM,
     SET_CURRENT_GENERATION,
-} from '../constants/Tools';
+} from '../constants';
 
 export function setCurrentItem(item) {
     return (dispatch) => {
