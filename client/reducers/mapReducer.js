@@ -65,7 +65,7 @@ export default function map(state = initialState, action) {
 
             for (let i = action.x, i1 = 0; i1 < generationHeight; i++, i1++) {
                 for (let j = action.y, j1 = 0; j1 < generationWidth; j++, j1++) {
-                    if (action.source[i1][j1] !== '')
+                    if (action.source[i1][j1] !== '0')
                         newCreateSource[i][j] = action.source[i1][j1];
                 }
             }
