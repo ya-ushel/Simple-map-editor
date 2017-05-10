@@ -1,0 +1,122 @@
+/* REACT HOT LOADER */ if (module.hot) { (function () { var ReactHotAPI = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Cell = function (_Component) {
+    _inherits(Cell, _Component);
+
+    function Cell(props) {
+        _classCallCheck(this, Cell);
+
+        var _this = _possibleConstructorReturn(this, (Cell.__proto__ || Object.getPrototypeOf(Cell)).call(this, props));
+
+        _this.state = {
+            isMouseDown: false
+        };
+        return _this;
+    }
+
+    _createClass(Cell, [{
+        key: 'clickHandle',
+        value: function clickHandle(x, y) {
+            var tool = this.props.tools.currentItem;
+            if (tool === 'hand') {
+                var newArray = this.props.map.source;
+                newArray[x][y] = this.props.blocks.selectedBlock;
+                this.props.mapActions.changedMapSource(newArray);
+            }
+            if (tool === 'delete') {
+                var _newArray = this.props.map.source;
+                _newArray[x][y] = '';
+                this.props.mapActions.changedMapSource(_newArray);
+            }
+            if (tool === 'select') {
+                var item = this.props.map.selectedItem;
+                item[x][y] = 1;
+                this.props.mapActions.changedMapSelect(item);
+            }
+        }
+    }, {
+        key: 'selectHandle',
+        value: function selectHandle(x, y) {
+            var tool = this.props.tools.currentItem;
+            if (this.props.map.select && tool === 'hand') {
+                var newArray = this.props.map.source;
+                newArray[x][y] = this.props.blocks.selectedBlock;
+                this.props.mapActions.changedMapSource(newArray);
+            }
+            if (this.props.map.select && tool === 'delete') {
+                var _newArray2 = this.props.map.source;
+                _newArray2[x][y] = '';
+                this.props.mapActions.changedMapSource(_newArray2);
+            }
+        }
+    }, {
+        key: 'moveStartHandle',
+        value: function moveStartHandle() {
+            var selectCells = this.props.mapActions.selectCells;
+
+            selectCells(true);
+        }
+    }, {
+        key: 'unMoveHandle',
+        value: function unMoveHandle() {
+            if (this.props.map.select) {
+                var selectCells = this.props.mapActions.selectCells;
+
+                selectCells(false);
+            }
+        }
+    }, {
+        key: 'rightClickHandle',
+        value: function rightClickHandle(e) {
+            if (this.props.tools.currentItem === 'select') {
+                initMapSelectFunc(this.props.mapActions.initMapSelect);
+            }
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            var num = this.props.serialNumber;
+            var temp = 'cell ';
+
+            temp += this.props.map.mapping[num] ? this.props.map.mapping[num] : '';
+            if (this.props.map.selectedItem[this.props.x] !== undefined) {
+                if (this.props.map.selectedItem[this.props.x][this.props.y] === 1) temp += 'selected ';
+            }
+
+            return _react2.default.createElement('div', {
+                className: temp,
+                onClick: this.clickHandle.bind(this, this.props.x, this.props.y),
+                onMouseDown: this.moveStartHandle.bind(this),
+                onMouseMove: this.selectHandle.bind(this, this.props.x, this.props.y),
+                onMouseUp: this.unMoveHandle.bind(this),
+                onContextMenu: this.rightClickHandle.bind(this, event)
+            });
+        }
+    }]);
+
+    return Cell;
+}(_react.Component);
+
+exports.default = Cell;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (module.hot) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Cell.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }

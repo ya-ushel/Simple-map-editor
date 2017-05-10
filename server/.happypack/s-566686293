@@ -1,0 +1,97 @@
+/* REACT HOT LOADER */ if (module.hot) { (function () { var ReactHotAPI = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.initMap = initMap;
+exports.addMapSource = addMapSource;
+exports.deleteMapSource = deleteMapSource;
+exports.updateMapSize = updateMapSize;
+exports.selectCells = selectCells;
+exports.addSelection = addSelection;
+exports.resetSelections = resetSelections;
+exports.createStructures = createStructures;
+
+var _Map = require('../constants/Map');
+
+function initMap(source, width, height) {
+
+    return function (dispatch) {
+        dispatch({
+            type: _Map.MAP_INIT,
+            payload: {
+                source: source,
+                width: width,
+                height: height
+            }
+        });
+    };
+}
+
+function addMapSource(elem, x, y) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.CHANGED_MAP_SOURCE,
+            x: x, y: y, elem: elem
+        });
+    };
+}
+function deleteMapSource(x, y) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.CHANGED_MAP_SOURCE,
+            x: x, y: y, elem: ''
+        });
+    };
+}
+
+function updateMapSize(newWidth, newHeight) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.UPDATE_MAP_SIZE,
+            payload: { newWidth: newWidth, newHeight: newHeight }
+        });
+    };
+}
+
+function selectCells(value) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.SET_SELECT,
+            payload: value
+        });
+    };
+}
+
+function addSelection(x, y) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.ADD_SELECTION,
+            x: x, y: y
+        });
+    };
+}
+
+function resetSelections() {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.RESET_SELECTIONS,
+            payload: []
+        });
+    };
+}
+
+function createStructures(source, x, y) {
+    return function (dispatch) {
+        dispatch({
+            type: _Map.CREATE_STRUCTURES,
+            source: source,
+            x: x,
+            y: y
+        });
+    };
+}
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (module.hot) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "mapActions.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }

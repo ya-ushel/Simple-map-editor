@@ -1,0 +1,206 @@
+$blocksArray: ('grass1_1', 'grass2_1', 'grass2_2', 'grass3_1', 'grass04_01',
+'grass05_01', 'grass05_02', 'grass06_01', 'grass06_02', 'grass06_03', 'grass06_04', 'grass07_01', 'grass08_01',
+'grass08_02', 'grass09_01', 'grass09_02', 'grass10_01', 'grass10_02', 'grass11_01', 'grass12_01', 'grass12_02',
+'grass12_03', 'grass12_04', 'grass13_01', 'grass13_02', 'grass13_03', 'grass13_04', 'grass14_01', 'grass14_02',
+'grass14_03', 'grass14_04', 'grass15_01', 'grass16_01');
+
+$blocksHeight: 70px;
+$toolsBorderColor: #006064;
+
+@each $block in $blocksArray {
+  .#{$block} {
+    background: url("/img/PNG Grass/#{$block}.png") no-repeat;
+    background-size: cover;
+  }
+}
+
+*:not(.toolsCreateContext) {
+  margin: 0;
+  padding: 0;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #E1F5FE;
+  overflow: hidden;
+
+}
+
+.grid {
+  display: inline-flex;
+  flex-wrap: wrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  cursor: pointer;
+
+  .cell {
+    border-bottom: 1px solid #FFEB3B;
+    border-right: 1px solid #FFEB3B;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    opacity: 0.8;
+  }
+  .selected {
+    border: 2px solid blue;
+  }
+
+  .cell:hover {
+    opacity: 1;
+    border: 2px solid #FFEB3B;
+  }
+}
+
+.blocksContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .blocks {
+    background-color: #8BC34A;
+    width: 700px;
+    height: $blocksHeight;
+
+    .blocksCarousel {
+      display: flex;
+      align-items: center;
+
+      .block {
+        border: 1px solid black;
+        background-color: white;
+        margin-right: 5px;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-size: 88%;
+        background-position: center;
+      }
+      .block.selected {
+        border: 1px solid #F44336;
+      }
+
+      .prevArrow, .nextArrow {
+        min-width: 50px;
+        height: $blocksHeight;
+        line-height: $blocksHeight;
+        vertical-align: middle;
+        margin: auto;
+        background-color: black;
+        cursor: pointer;
+        opacity: 0.1;
+        color: white;
+        padding-top: 3%;
+        box-sizing: border-box;
+        transition: opacity 0.3s;
+      }
+      .prevArrow:hover, .nextArrow:hover {
+        opacity: 0.5;
+      }
+      .prevArrow div {
+        margin: auto;
+        width: 32px;
+        height: 32px;
+        background: url("/img/prevArrow.png") no-repeat;
+      }
+      .nextArrow div {
+        margin: auto;
+        width: 32px;
+        height: 32px;
+        background: url("/img/nextArrow.png") no-repeat;
+      }
+
+    }
+
+  }
+}
+
+.toolsContainer {
+  position: absolute;
+  left: 0;
+  top: 150px;
+  display: flex;
+}
+
+.contentToolContainer {
+  border: 1px solid $toolsBorderColor;
+  background-color: white;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.contentToolContainer {
+  box-sizing: border-box;
+
+  div {
+    border-bottom: 1px solid $toolsBorderColor;
+    width: 40px;
+    min-height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div:hover {
+    background-color: #BDBDBD;
+  }
+  :last-child {
+    border-bottom: none;
+  }
+
+  .currentGeneration {
+    background-color: #BDBDBD;
+  }
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  background-color: white;
+  .noneBorder {
+    border-right: 3px solid #FF5722;
+  }
+  :first-child {
+    border-top: 1px solid $toolsBorderColor;
+  }
+  .active {
+    background-color: #BDBDBD !important;
+  }
+
+  .toolsItem {
+    border-bottom: 1px solid $toolsBorderColor;
+    flex-basis: 50px;
+    height: 50px;
+    cursor: pointer;
+
+  }
+;
+
+  .hand {
+    background: url("/img/hand.png") center no-repeat;
+  }
+
+  .deleteItem {
+    background: url("/img/delete.png") center no-repeat;
+  }
+
+  .select {
+    background: url("/img/icon.png") center no-repeat;
+  }
+
+  .create {
+    background: url("/img/add.png") center no-repeat;
+  }
+
+  .turn {
+    background: url("/img/redo.png") center no-repeat;
+  }
+
+}
+

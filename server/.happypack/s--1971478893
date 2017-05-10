@@ -1,0 +1,33 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _redux = require('redux');
+
+var _reduxRouter = require('redux-router');
+
+var _myFirstReducer = require('./myFirstReducer');
+
+var _myFirstReducer2 = _interopRequireDefault(_myFirstReducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rootReducer = (0, _redux.combineReducers)({});
+
+var _default = rootReducer;
+exports.default = _default;
+;
+
+var _temp = function () {
+  if (typeof __REACT_HOT_LOADER__ === 'undefined') {
+    return;
+  }
+
+  __REACT_HOT_LOADER__.register(rootReducer, 'rootReducer', 'C:/Users/Dmitriy/WebstormProjects/FirstProject/app/reducers/index.js');
+
+  __REACT_HOT_LOADER__.register(_default, 'default', 'C:/Users/Dmitriy/WebstormProjects/FirstProject/app/reducers/index.js');
+}();
+
+;

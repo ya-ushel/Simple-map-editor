@@ -1,0 +1,1 @@
+{"version":3,"sources":["C:/Users/Dmitriy/WebstormProjects/FirstProject/server/..\\client\\constants\\Page.js"],"names":["GET_PHOTOS_REQUEST","GET_PHOTOS_SUCCESS"],"mappings":";;;;;;;AAAO,IAAMA,kDAAqB,oBAA3B;AACA,IAAMC,kDAAqB,oBAA3B,C","sourcesContent":["export const GET_PHOTOS_REQUEST = 'GET_PHOTOS_REQUEST';\r\nexport const GET_PHOTOS_SUCCESS = 'GET_PHOTOS_SUCCESS';"]}

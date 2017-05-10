@@ -1,0 +1,138 @@
+/* REACT HOT LOADER */ if (module.hot) { (function () { var ReactHotAPI = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactSlick = require('react-slick');
+
+var _reactSlick2 = _interopRequireDefault(_reactSlick);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LeftNavButton = function (_Component) {
+    _inherits(LeftNavButton, _Component);
+
+    function LeftNavButton() {
+        _classCallCheck(this, LeftNavButton);
+
+        return _possibleConstructorReturn(this, (LeftNavButton.__proto__ || Object.getPrototypeOf(LeftNavButton)).apply(this, arguments));
+    }
+
+    _createClass(LeftNavButton, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'button',
+                { onClick: this.props.onClick },
+                'N'
+            );
+        }
+    }]);
+
+    return LeftNavButton;
+}(_react.Component);
+
+var Blocks = function (_Component2) {
+    _inherits(Blocks, _Component2);
+
+    function Blocks(props) {
+        _classCallCheck(this, Blocks);
+
+        var _this2 = _possibleConstructorReturn(this, (Blocks.__proto__ || Object.getPrototypeOf(Blocks)).call(this, props));
+
+        _this2.state = {};
+
+        return _this2;
+    }
+
+    _createClass(Blocks, [{
+        key: 'render',
+        value: function render() {
+
+            var settings = {
+                dots: false,
+                infinite: true,
+                draggable: false,
+                focusOnSelect: true,
+                speed: 500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                nextArrow: LeftNavButton
+            };
+
+            return _react2.default.createElement(
+                'div',
+                { className: 'blocks' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'blocksContainer' },
+                    _react2.default.createElement(
+                        _reactSlick2.default,
+                        settings,
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '1'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '2'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '3'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '4'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '5'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '6'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '7'
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'block' },
+                            '8'
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Blocks;
+}(_react.Component);
+
+exports.default = Blocks;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (module.hot) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Blocks.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }

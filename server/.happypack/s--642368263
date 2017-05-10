@@ -1,0 +1,30 @@
+SyntaxError: C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Unexpected token (135:30)
+
+[0m [90m 133 | [39m                    type[33m=[39m[32m"text"[39m
+ [90m 134 | [39m                    value[33m=[39m{[36mthis[39m[33m.[39mstate[33m.[39mname}
+[31m[1m>[22m[39m[90m 135 | [39m                    onChange[33m=[39m{[33m,[39m[36mthis[39m[33m.[39monChangeInput}
+ [90m     | [39m                              [31m[1m^[22m[39m
+ [90m 136 | [39m                    placeholder[33m=[39m[32m'Enter value'[39m
+ [90m 137 | [39m                [33m/[39m[33m>[39m
+ [90m 138 | [39m                [33m<[39m[33mtextarea[39m[0m
+
+BabelLoaderError: SyntaxError: C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Unexpected token (135:30)
+
+[0m [90m 133 | [39m                    type[33m=[39m[32m"text"[39m
+ [90m 134 | [39m                    value[33m=[39m{[36mthis[39m[33m.[39mstate[33m.[39mname}
+[31m[1m>[22m[39m[90m 135 | [39m                    onChange[33m=[39m{[33m,[39m[36mthis[39m[33m.[39monChangeInput}
+ [90m     | [39m                              [31m[1m^[22m[39m
+ [90m 136 | [39m                    placeholder[33m=[39m[32m'Enter value'[39m
+ [90m 137 | [39m                [33m/[39m[33m>[39m
+ [90m 138 | [39m                [33m<[39m[33mtextarea[39m[0m
+
+    at transpile (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:63:13)
+    at Object.module.exports (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:163:20)
+    at applySyncOrAsync (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:341:21)
+    at apply (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:268:5)
+    at C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:131:7
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:184:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:222:4)
+    at applyLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:116:3)

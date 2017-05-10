@@ -1,0 +1,33 @@
+/* REACT HOT LOADER */ if (module.hot) { (function () { var ReactHotAPI = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _redux = require('redux');
+
+var _mapReducer = require('./mapReducer');
+
+var _mapReducer2 = _interopRequireDefault(_mapReducer);
+
+var _toolsReducer = require('./toolsReducer');
+
+var _toolsReducer2 = _interopRequireDefault(_toolsReducer);
+
+var _blocksReducer = require('./blocksReducer');
+
+var _blocksReducer2 = _interopRequireDefault(_blocksReducer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var rootReducer = (0, _redux.combineReducers)({
+    mapReducer: _mapReducer2.default,
+    toolsReducer: _toolsReducer2.default,
+    blocksReducer: _blocksReducer2.default
+});
+
+exports.default = rootReducer;
+
+/* REACT HOT LOADER */ }).call(this); } finally { if (module.hot) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("C:\\Users\\Dmitriy\\WebstormProjects\\FirstProject\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "index.js" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }

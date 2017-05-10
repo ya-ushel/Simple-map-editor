@@ -1,0 +1,12 @@
+[BABEL] C:\Users\Dmitriy\WebstormProjects\FirstProject\app\index.js: Unknown option: direct.presets
+ReferenceError: [BABEL] C:\Users\Dmitriy\WebstormProjects\FirstProject\app\index.js: Unknown option: direct.presets
+    at Logger.error (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\file\logger.js:58:11)
+    at OptionManager.mergeOptions (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\file\options\option-manager.js:126:29)
+    at OptionManager.init (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\file\options\option-manager.js:216:10)
+    at File.initOptions (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\file\index.js:147:75)
+    at new File (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\file\index.js:137:22)
+    at Pipeline.transform (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-core\lib\transformation\pipeline.js:164:16)
+    at transpile (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\index.js:12:22)
+    at Object.module.exports (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\index.js:71:12)
+    at applySyncOrAsync (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:341:21)
+    at apply (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:268:5)

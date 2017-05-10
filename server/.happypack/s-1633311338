@@ -1,0 +1,30 @@
+SyntaxError: C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Unexpected token, expected , (107:40)
+
+[0m [90m 105 | [39m        })[33m;[39m
+ [90m 106 | [39m
+[31m[1m>[22m[39m[90m 107 | [39m        console[33m.[39mlog(e[33m.[39mtarget[33m.[39mname[33m.[39mtrim()length)[33m;[39m
+ [90m     | [39m                                        [31m[1m^[22m[39m
+ [90m 108 | [39m        [36mif[39m(e[33m.[39mtarget[33m.[39mname[33m.[39mlength [33m<=[39m [35m0[39m)
+ [90m 109 | [39m            [36mthis[39m[33m.[39msetState({
+ [90m 110 | [39m                buttonDisabled[33m:[39m [36mtrue[39m[0m
+
+BabelLoaderError: SyntaxError: C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Unexpected token, expected , (107:40)
+
+[0m [90m 105 | [39m        })[33m;[39m
+ [90m 106 | [39m
+[31m[1m>[22m[39m[90m 107 | [39m        console[33m.[39mlog(e[33m.[39mtarget[33m.[39mname[33m.[39mtrim()length)[33m;[39m
+ [90m     | [39m                                        [31m[1m^[22m[39m
+ [90m 108 | [39m        [36mif[39m(e[33m.[39mtarget[33m.[39mname[33m.[39mlength [33m<=[39m [35m0[39m)
+ [90m 109 | [39m            [36mthis[39m[33m.[39msetState({
+ [90m 110 | [39m                buttonDisabled[33m:[39m [36mtrue[39m[0m
+
+    at transpile (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:63:13)
+    at Object.module.exports (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:163:20)
+    at applySyncOrAsync (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:341:21)
+    at apply (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:268:5)
+    at C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:131:7
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:184:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:222:4)
+    at applyLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:116:3)

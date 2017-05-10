@@ -1,0 +1,1 @@
+{"version":3,"sources":["C:/Users/Dmitriy/WebstormProjects/FirstProject/client\\containers\\index.js"],"names":["App"],"mappings":";;;;;;;;;;;;;;;QAAOA,G","sourcesContent":["export App from './App/App';\n"]}

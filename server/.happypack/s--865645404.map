@@ -1,0 +1,1 @@
+{"version":3,"sources":["C:/Users/Dmitriy/WebstormProjects/FirstProject/server/..\\client\\constants\\Blocks.js"],"names":["INIT_BLOCKS","SET_SELECTED_BLOCK"],"mappings":";;;;;;;AAAO,IAAMA,oCAAc,aAApB;AACA,IAAMC,kDAAqB,oBAA3B,C","sourcesContent":["export const INIT_BLOCKS = 'INIT_BLOCKS';\r\nexport const SET_SELECTED_BLOCK = 'SET_SELECTED_BLOCK';"]}

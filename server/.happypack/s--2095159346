@@ -1,0 +1,30 @@
+C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Duplicate declaration "name"
+
+[0m [90m 165 | [39m        console[33m.[39mlog([36mthis[39m[33m.[39mprops[33m.[39muser)[33m;[39m
+ [90m 166 | [39m        [36mconst[39m {name[33m,[39msurname[33m,[39mage} [33m=[39m [36mthis[39m[33m.[39mprops[33m.[39muser[33m;[39m
+[31m[1m>[22m[39m[90m 167 | [39m        [36mconst[39m {name[33m,[39msurname[33m,[39mage} [33m=[39m [36mthis[39m[33m.[39mprops[33m.[39muser[33m;[39m
+ [90m     | [39m               [31m[1m^[22m[39m
+ [90m 168 | [39m        [36mreturn[39m (
+ [90m 169 | [39m            [33m<[39m[33mdiv[39m className[33m=[39m[32m"app"[39m[33m>[39m
+ [90m 170 | [39m                [33m<[39m[33mp[39m[33m>[39m{[32m`Name: ${name}`[39m}[33m<[39m[33m/[39m[33mp[39m[33m>[39m[0m
+
+BabelLoaderError: C:/Users/Dmitriy/WebstormProjects/FirstProject/client/containers/App/App.js: Duplicate declaration "name"
+
+[0m [90m 165 | [39m        console[33m.[39mlog([36mthis[39m[33m.[39mprops[33m.[39muser)[33m;[39m
+ [90m 166 | [39m        [36mconst[39m {name[33m,[39msurname[33m,[39mage} [33m=[39m [36mthis[39m[33m.[39mprops[33m.[39muser[33m;[39m
+[31m[1m>[22m[39m[90m 167 | [39m        [36mconst[39m {name[33m,[39msurname[33m,[39mage} [33m=[39m [36mthis[39m[33m.[39mprops[33m.[39muser[33m;[39m
+ [90m     | [39m               [31m[1m^[22m[39m
+ [90m 168 | [39m        [36mreturn[39m (
+ [90m 169 | [39m            [33m<[39m[33mdiv[39m className[33m=[39m[32m"app"[39m[33m>[39m
+ [90m 170 | [39m                [33m<[39m[33mp[39m[33m>[39m{[32m`Name: ${name}`[39m}[33m<[39m[33m/[39m[33mp[39m[33m>[39m[0m
+
+    at transpile (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:63:13)
+    at Object.module.exports (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\babel-loader\lib\index.js:163:20)
+    at applySyncOrAsync (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:341:21)
+    at apply (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:268:5)
+    at C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:131:7
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:184:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoader (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:192:14)
+    at applyPitchLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:222:4)
+    at applyLoaders (C:\Users\Dmitriy\WebstormProjects\FirstProject\node_modules\happypack\lib\applyLoaders.js:116:3)
