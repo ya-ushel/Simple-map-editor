@@ -15,9 +15,6 @@ class Map extends Component {
         this.state = {
             countColumn: Math.floor(clientWidth / 50),
             countRows: Math.ceil(clientHeight / 50),
-            gridArray: [],
-            test: false,
-
         };
     }
 

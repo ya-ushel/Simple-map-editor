@@ -9,7 +9,7 @@ export const CREATE_STRUCTURES = 'CREATE_STRUCTURES';
 
 
 export const MAPPING = {
-    '1': 'grass1_1',
+    '1': 'grass1_1 ',
     '2': 'grass2_1 ',
     '3': 'grass2_2 ',
     '4': 'grass04_01 ',
