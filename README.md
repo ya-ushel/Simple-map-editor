@@ -1,6 +1,6 @@
 # Simple map editor
 
-The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocking blocks and mesh for their display
+The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocks and mesh for their display.
 
 ---
 
@@ -16,8 +16,8 @@ The map editor provides a comfortable work with the source code of the map. It c
 ## Getting Started
 
 1. Clone this project `git clone https://github.com/ya-ushel/Simple-map-editor.git`
-1. Run `npm install` from root directory
-1. Run `npm run start-win (windows)`
+1. Run `yarn install` from root directory
+1. Run `yarn run start-win` (windows) *or* `yarn run start` (linux / macOS)
 
 ---
 
@@ -32,17 +32,29 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 ## How it works
 
+### 1. Map
 
-## 1. Tools
+![map](http://i.piccy.info/i9/80495c3ddc7d243a82d8a2d1228a2745/1494485872/18764/1144576/map.png)  
+> A map is a component that takes up all the space on a page, which is a two-dimensional array of cells. The remaining components interact with the map.
 
- * ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  **Hand tool**.  
+
+
+### 2. Tools
+
+* ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  **Hand tool**.  
 This tool allows you to insert the selected block from the panel of blocks on the card. There are two types of insertion: inserting one block - clicking the mouse, and inserting several blocks - by clamping.
 
 * ![delete tool](http://i.piccy.info/i9/bb26612e6ba5589ea1f4e58844930bf5/1494443301/992/1144576/delete.png) **Delete tool**.  
 Removal works on the principle of installation, but, accordingly, removes blocks
 
 * ![select tool](http://i.piccy.info/i9/75169cd73e42b189b667b7d701437137/1494444113/474/1144576/icon.png) **Select tool**.  
-At the moment this is a simple selection that allows you to just select cells on the map and change their contents
+At the moment this is a simple selection that allows you to just select cells on the map and change their contents.
 
 * ![create tool](http://i.piccy.info/i9/c797d544f3379c16388a2712d713d756/1494444130/1231/1144576/add.png) **Create tool**.  
-The tool allows you to generate pre-prepared block structures
+The tool allows you to generate pre-prepared block structures.
+
+
+### 3. Blocks
+
+![blocks](http://i.piccy.info/i9/6ac6a25f571890b362691b4f8235e8d7/1494491848/7383/1144576/blocks.png)  
+> Blocks are a kind of "building element". With an intuitive interface, you can choose any block and paste it on the map.
