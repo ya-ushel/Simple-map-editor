@@ -16,8 +16,8 @@ The map editor provides a comfortable work with the source code of the map. It c
 ## Getting Started
 
 1. Clone this project `git clone https://github.com/ya-ushel/Simple-map-editor.git`
-1. Run `npm install` from root directory
-1. Run `npm run start-win (windows)`
+1. Run `yarn install` from root directory
+1. Run `yarn run start-win (windows), start (linux / macOs)`
 
 ---
 
