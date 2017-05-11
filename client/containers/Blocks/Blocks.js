@@ -57,7 +57,7 @@ class Blocks extends Component {
             initialSlide: 0,
             infinite: false,
             speed: 500,
-            slidesToShow: 8,
+            slidesToShow: 10,
             slidesToScroll: 3,
             className: 'blocksCarousel',
             prevArrow: <LeftNavButton/>,
@@ -88,7 +88,7 @@ class Blocks extends Component {
         return (
             <div className="blocksContainer">
                 <div className="blocks"
-                     // onWheel={this.onWheel.bind(this, event)}
+                     onWheel={this.onWheel.bind(this, event)}
                 >
                     <Slider ref={c => this.slider = c } {...settings}>
                         {sliderContent}
