@@ -1,6 +1,6 @@
 # Simple map editor
 
-The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocks and mesh for their display
+The map editor provides a comfortable work with the source code of the map. It consists of various tools, blocks and mesh for their display.
 
 ---
 
@@ -48,10 +48,13 @@ This tool allows you to insert the selected block from the panel of blocks on th
 Removal works on the principle of installation, but, accordingly, removes blocks
 
 * ![select tool](http://i.piccy.info/i9/75169cd73e42b189b667b7d701437137/1494444113/474/1144576/icon.png) **Select tool**.  
-At the moment this is a simple selection that allows you to just select cells on the map and change their contents
+At the moment this is a simple selection that allows you to just select cells on the map and change their contents.
 
 * ![create tool](http://i.piccy.info/i9/c797d544f3379c16388a2712d713d756/1494444130/1231/1144576/add.png) **Create tool**.  
-The tool allows you to generate pre-prepared block structures
+The tool allows you to generate pre-prepared block structures.
 
 
 ### 3. Blocks
+
+![blocks](http://i.piccy.info/i9/6ac6a25f571890b362691b4f8235e8d7/1494491848/7383/1144576/blocks.png)  
+> Blocks are a kind of "building element". With an intuitive interface, you can choose any block and paste it on the map.
