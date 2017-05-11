@@ -35,7 +35,7 @@ The map editor provides a comfortable work with the source code of the map. It c
 ### 1. Map
 
 ![map](http://i.piccy.info/i9/80495c3ddc7d243a82d8a2d1228a2745/1494485872/18764/1144576/map.png)  
-> A map is a two-dimensional array of cells.
+> A map is a component that takes up all the space on a page, which is a two-dimensional array of cells. The remaining components interact with the map.
 
 
 
@@ -52,3 +52,6 @@ At the moment this is a simple selection that allows you to just select cells on
 
 * ![create tool](http://i.piccy.info/i9/c797d544f3379c16388a2712d713d756/1494444130/1231/1144576/add.png) **Create tool**.  
 The tool allows you to generate pre-prepared block structures
+
+
+### 3. Blocks
