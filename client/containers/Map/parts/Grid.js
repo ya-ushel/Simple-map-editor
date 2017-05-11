@@ -30,7 +30,6 @@ export default class Grid extends Component {
                         map={this.props.map}
                         tools={this.props.tools}
                         blocks={this.props.blocks}
-                        initMapSelectFunc={this.props.initMapSelectFunc}
                     />
                 );
             }
