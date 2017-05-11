@@ -32,9 +32,9 @@ The map editor provides a comfortable work with the source code of the map. It c
 
 ## How it works
 
-### Map
+### 1. Map
 
-* ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  **Hand tool**.  
+* ![map](http://i.piccy.info/i9/80495c3ddc7d243a82d8a2d1228a2745/1494485872/18764/1144576/map.png)  
 This tool allows you to insert the selected block from the panel of blocks on the card. There are two types of insertion: inserting one block - clicking the mouse, and inserting several blocks - by clamping.
 
 * ![delete tool](http://i.piccy.info/i9/bb26612e6ba5589ea1f4e58844930bf5/1494443301/992/1144576/delete.png) **Delete tool**.  
@@ -46,7 +46,7 @@ At the moment this is a simple selection that allows you to just select cells on
 * ![create tool](http://i.piccy.info/i9/c797d544f3379c16388a2712d713d756/1494444130/1231/1144576/add.png) **Create tool**.  
 The tool allows you to generate pre-prepared block structures
 
-### Tools
+### 2. Tools
 
 * ![hand tool](http://i.piccy.info/i9/16d39b65b783dc487c287cdb49a353d6/1494442914/984/1144576/hand.png)  **Hand tool**.  
 This tool allows you to insert the selected block from the panel of blocks on the card. There are two types of insertion: inserting one block - clicking the mouse, and inserting several blocks - by clamping.
