@@ -7,12 +7,12 @@ export default class  extends Component {
     }
 
     render() {
-        let temp = 'toolsItem select';
+        let className = 'tools-item select';
         if (this.props.currentItem === 'select')
-            temp += ' active';
+            className += ' active';
         return (
             <div
-                className={temp}
+                className={className}
                 onClick={this.selectItem.bind(this)}
             />
         );

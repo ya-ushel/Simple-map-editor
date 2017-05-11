@@ -7,14 +7,14 @@ import * as toolsActions from '../../actions/toolsActions';
 
 class LeftNavButton extends Component {
     render() {
-        return <div onClick={this.props.onClick} className="prevArrow">
+        return <div onClick={this.props.onClick} className="prev-arrow">
             <div/>
         </div>
     }
 }
 class RightNavButton extends Component {
     render() {
-        return <div onClick={this.props.onClick} className="nextArrow">
+        return <div onClick={this.props.onClick} className="next-arrow">
             <div src="/img/nextArrow.png"/>
         </div>
     }
@@ -59,7 +59,7 @@ class Blocks extends Component {
             speed: 500,
             slidesToShow: 10,
             slidesToScroll: 3,
-            className: 'blocksCarousel',
+            className: 'blocks-carousel',
             prevArrow: <LeftNavButton/>,
             nextArrow: <RightNavButton/>,
             variableWidth: true,
@@ -86,7 +86,7 @@ class Blocks extends Component {
         }
 
         return (
-            <div className="blocksContainer">
+            <div className="blocks-container">
                 <div className="blocks"
                      onWheel={this.onWheel.bind(this, event)}
                 >

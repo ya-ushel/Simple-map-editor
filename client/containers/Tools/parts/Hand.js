@@ -7,12 +7,12 @@ export default class Hand extends Component {
     }
 
     render() {
-        let temp = 'toolsItem hand';
+        let className = 'tools-item hand';
         if (this.props.currentItem === 'hand')
-            temp += ' active';
+            className += ' active';
         return (
             <div
-                className={temp}
+                className={className}
                 onClick={this.selectItem.bind(this)}
             />
 

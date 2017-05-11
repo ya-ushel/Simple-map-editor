@@ -12,9 +12,9 @@ export default class Create extends Component {
     }
 
     render() {
-        let temp = 'toolsItem create';
+        let temp = 'tools-item create';
         if (this.props.currentItem === 'create')
-            temp += ' active noneBorder';
+            temp += ' active none-border';
 
         let context = null;
 

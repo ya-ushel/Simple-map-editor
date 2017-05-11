@@ -13,6 +13,7 @@ $toolsBorderColor: #006064;
     background-size: cover;
   }
 }
+
 *:not(.toolsCreateContext) {
   margin: 0;
   padding: 0;
@@ -58,7 +59,7 @@ $toolsBorderColor: #006064;
   }
 }
 
-.blocksContainer {
+.blocks-container {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -78,7 +79,7 @@ $toolsBorderColor: #006064;
     width: 700px;
     height: $blocksHeight;
 
-    .blocksCarousel {
+    .blocks-carousel {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -100,7 +101,7 @@ $toolsBorderColor: #006064;
         border: 1px solid #F44336;
       }
 
-      .prevArrow, .nextArrow {
+      .prev-arrow, .next-arrow {
         min-width: 50px;
         height: $blocksHeight;
         line-height: $blocksHeight;
@@ -118,16 +119,16 @@ $toolsBorderColor: #006064;
         display: -ms-inline-flexbox;
         display: inline-flex;
       }
-      .prevArrow:hover, .nextArrow:hover {
+      .prev-arrow:hover, .next-arrow:hover {
         opacity: 0.5;
       }
-      .prevArrow div {
+      .prev-arrow div {
         margin: auto;
         width: 32px;
         height: 32px;
         background: url("/img/prevArrow.png") no-repeat;
       }
-      .nextArrow div {
+      .next-arrow div {
         margin: auto;
         width: 32px;
         height: 32px;
@@ -139,7 +140,7 @@ $toolsBorderColor: #006064;
   }
 }
 
-.toolsContainer {
+.tools-container {
   position: absolute;
   left: 0;
   top: 150px;
@@ -148,16 +149,13 @@ $toolsBorderColor: #006064;
   display: flex;
 }
 
-.contentToolContainer {
+.content-tool-container {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   border: 1px solid $toolsBorderColor;
   background-color: white;
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.contentToolContainer {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 
   div {
     border-bottom: 1px solid $toolsBorderColor;
@@ -181,7 +179,7 @@ $toolsBorderColor: #006064;
     border-bottom: none;
   }
 
-  .currentGeneration {
+  .current-generation {
     background-color: #BDBDBD;
   }
 }
@@ -196,7 +194,7 @@ $toolsBorderColor: #006064;
   flex-direction: column;
   width: 50px;
   background-color: white;
-  .noneBorder {
+  .none-border {
     border-right: 3px solid #FF5722;
   }
   :first-child {
@@ -206,7 +204,7 @@ $toolsBorderColor: #006064;
     background-color: #BDBDBD !important;
   }
 
-  .toolsItem {
+  .tools-item {
     border-bottom: 1px solid $toolsBorderColor;
     -ms-flex-preferred-size: 50px;
     flex-basis: 50px;
@@ -220,7 +218,7 @@ $toolsBorderColor: #006064;
     background: url("/img/hand.png") center no-repeat;
   }
 
-  .deleteItem {
+  .delete-item {
     background: url("/img/delete.png") center no-repeat;
   }
 

@@ -7,12 +7,12 @@ export default class Delete extends Component {
     }
 
     render() {
-        let temp = 'toolsItem deleteItem';
+        let className = 'tools-item delete-item';
         if (this.props.currentItem === 'delete')
-            temp += ' active';
+            className += ' active';
         return (
             <div
-                className={temp}
+                className={className}
                 onClick={this.selectItem.bind(this)}
             />
         );

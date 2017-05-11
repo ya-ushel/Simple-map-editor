@@ -13,7 +13,7 @@ class Tools extends Component {
     render() {
 
         return (
-            <div className="toolsContainer">
+            <div className="tools-container">
                 <div className="tools">
                     <Hand
                         setCurrentItem={this.props.toolsActions.setCurrentItem}

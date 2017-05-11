@@ -13,7 +13,7 @@ export default class contentTool extends Component {
         generateObj.map((obj) => {
             let className = '';
             if (obj.name === currentGeneration)
-                className = 'currentGeneration';
+                className = 'current-generation';
             content.push(
                 <div
                     key={obj.id}
@@ -29,17 +29,17 @@ export default class contentTool extends Component {
 
     render() {
 
-        let content = [], temp;
+        let content = [], className;
         switch (this.props.tools.currentItem) {
             case 'create':
-                temp = 'contentToolContainer';
+                className = 'content-tool-container';
                 content = this.createContent();
                 break;
         }
 
 
         return (
-            <div className={temp}>
+            <div className={className}>
                 {content}
             </div>
         );
