@@ -13,7 +13,7 @@ class Map extends Component {
         let clientHeight = document.documentElement.clientHeight;
 
         this.state = {
-            countColumn: Math.ceil(clientWidth / 50),
+            countColumn: Math.floor(clientWidth / 50),
             countRows: Math.ceil(clientHeight / 50),
             gridArray: [],
             test: false,
@@ -47,7 +47,7 @@ class Map extends Component {
 
     forceUpdate() {
 
-        let width = Math.ceil(document.documentElement.clientWidth / 50);
+        let width = Math.floor(document.documentElement.clientWidth / 50);
         let height = Math.ceil(document.documentElement.clientHeight / 50);
 
         if (width !== this.state.countColumn || height !== this.state.countRows) {

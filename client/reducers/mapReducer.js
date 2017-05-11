@@ -61,7 +61,6 @@ export default function map(state = initialState, action) {
         case CREATE_STRUCTURES:
             let newCreateSource = state.source;
             let generationHeight = action.source.length;
-            let generationWidth = action.source[0].length;
 
             for (let i = action.x, i1 = 0; i1 < generationHeight; i++, i1++) {
                 for (let j = action.y, j1 = 0; j1 < action.source[i1].length; j++, j1++) {

@@ -53,7 +53,8 @@ export default class Cell extends Component {
             if (item.x === this.props.x && item.y === this.props.y)
                 cellSelected = true;
         });
-        return (this.props.serialNumber !== nextProps.serialNumber) || cellSelected;
+        // return (this.props.serialNumber !== nextProps.serialNumber) || cellSelected;
+        return true;
     }
 
     onMoveStart() {
